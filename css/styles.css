@@ -172,7 +172,7 @@ a{
 }
 
 .icon--primary{
-    fill: var(--color-primary);
+    fill: gold;
 }
 
 .icon-container{
@@ -314,7 +314,7 @@ a{
 .plan__name {
     color: #fff;
     margin: 0;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2.4rem;
   }
   
@@ -349,8 +349,8 @@ a{
     width: 40px;
     display: inline-block;
     position: absolute;
-    top: -4px;
-    right:40px;
+    top: -6px;
+    right:5%;
   }
   
   @media screen and (min-width: 1024px) {
@@ -370,3 +370,21 @@ a{
       font-size: 1.7rem;
     }
   }
+
+  /* media */
+.media {
+    display: flex;
+}
+
+.media .media__title{
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.media__body p{
+    font-size: 2rem;
+}
+
+.media__image{
+    margin: 4rem 2rem;
+}
