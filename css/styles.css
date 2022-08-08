@@ -5,8 +5,8 @@
 }
 
 :root{
-    --color-primary:#00d9ff;
-    --color-secondary:#2584ff; 
+    --color-primary:#2584ff;
+    --color-secondary:#00d9ff; 
     --color-accent: #ff3400;
     --color-headings: #210e6b;
     --color-body: #918ca4;
@@ -172,20 +172,32 @@ a{
     height: 40px;
 }
 
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
+
 .icon--primary{
-    fill: gold;
+    fill: var(--color-primary);
+}
+
+.icon--white{
+    fill: #fff;
 }
 
 .icon-container{
     background: #f3f9fa;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     border-radius: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
+.testimonial .icon-container{
+    background: var(--color-accent);
+}
 /* Buttons */
 
 .btn{
@@ -244,6 +256,10 @@ a{
     color: #fff;
     background: var(--color-headings);
     border: 0;
+}
+
+.btn-stretch{
+    padding: 2rem 7rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -421,9 +437,10 @@ a{
 }
 
 .quote__author{
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
+    margin-top: 3.2rem;
 }
 
 .quote__icon{
@@ -450,5 +467,83 @@ a{
 @media screen and (min-width: 1024px) {
     .grid--1x3{
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Testimonial */
+
+.testimonial{
+    padding: 3.5rem;
+}
+
+.testimonial__image{
+    position: relative;
+    margin: 0 3rem;
+}
+
+.testimonial__image > img{
+    width: 100%;
+}
+
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial__image {
+      margin: 0;
+    }
+  
+    .testimonial .quote{
+      font-size: 2.4rem;
+    }
+  
+    .testimonial .quote {
+      margin-top: 6rem;
+      margin-left: 6rem;
+      margin-right: 0;
+    }
+  }
+
+  /* Callout */
+.callout{
+    padding: 3rem;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+}
+
+.callout__heading{
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+.callout .btn{
+    justify-self: center;
+    align-self:center;
+}
+
+.callout__content{
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content{
+        text-align: left;
+    }
+
+    .callout .btn{
+        justify-self: start;
+        margin: 0 3rem;
     }
 }
