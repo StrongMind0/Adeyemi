@@ -11,10 +11,27 @@
     <link rel="stylesheet" href="/css/normalize .css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
-<body style="padding: 6rem;"> 
+<body>
+
+  <!-- NAV -->
+  <nav class="nav collapsible">
+    <a class="nav__brand" href="/"> <img src="images/logo.svg" alt=""></a>
+
+    <svg class="icon icon--white nav__toggler">
+      <use xlink:href="images/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav__list collapsible__content">
+      <li class="nav__items"> <a href="#">Hosting</a></li>
+      <li class="nav__items"> <a href="#">VPS</a></li>
+      <li class="nav__items"> <a href="#">Domain</a></li>
+      <li class="nav__items"> <a href="#">Pricing</a></li>
+    </ul>
+  </nav>
+  
+
 
   <!-- collapsible -->
-<div class="collapsible collapsible--expanded">
+<div class="collapsible">
   <header class="collapsible__header">
     <h2 class="collapsible__heading">Item 1</h2>
       <svg class="icon icon--white collapsible__chevron">
@@ -25,7 +42,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa impedit cupiditate repudiandae adipisci, quam ab laudantium aspernatur fuga placeat?</p>
   </div>
 </div>
-<div class="collapsible collapsible--expanded">
+<div class="collapsible">
   <header class="collapsible__header">
     <h2 class="collapsible__heading">Item 1</h2>
       <svg class="icon icon--white collapsible__chevron">
@@ -129,6 +146,18 @@
     <a href="#" class="btn btn-secondary btn-stretch"> Get Started </a>
   </div>
 </div>
+
+  <!-- Block -->
+  <section class="block block--dark block--skewed-left">
+    <header class="block__header">
+      <h2 class="block__heading">Heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+        laboriosam.
+      </p>
+    </header>
+  </section>
+  
 <script src="/Js/main.js"></script>
 </body>
 </html>
