@@ -113,8 +113,9 @@ a{
 }
 
 .badge--secondary{
-    background-color: #126de4;
+    background-color: var(--color-secondary);
     color: #fff;
+    /* #126de4 */
 }
 
 .badge--small{
@@ -725,5 +726,40 @@ a{
 
     .hero{
         padding-top: 0;
+    }
+}
+
+/* Domain-Block */
+
+.block--domain .icon{
+    width: 5rem;
+    height: 2rem;
+    transform: translateY(4px);
+}
+
+.domain__price-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.block--domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    margin: 4rem auto;
+    border: 0;
+    max-width: 670px;
+}
+
+@media screen and (min-width: 760px) {
+    .domain__price-list{
+        grid-template-columns: repeat(6, 140px);
+        justify-content: center;
+        /* grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); */
+        /* TODO: using temporary solution for the problem here*/
     }
 }
