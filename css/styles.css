@@ -122,6 +122,14 @@ a{
     font-size: 1.6rem;
 }
 
+.badge--small-primary{
+    background-color:#126de4;
+}
+
+.badge--small-secondary{
+    background-color:#02cdf1 ;
+}
+
 @media screen and (min-width: 1024px) {
     .badge{
         font-size:1.5rem;
@@ -329,7 +337,12 @@ a{
     color: #fff;
   }
 
+
   /* Plans */
+.plan{
+    transition: transform .2s ease-out;
+}
+
 .plan__name {
     color: #fff;
     margin: 0;
@@ -370,6 +383,18 @@ a{
     position: absolute;
     top: -6px;
     right:5%;
+  }
+
+  .plan--popular{
+    transform: scale(1.1);
+  }
+
+  .plan:hover{
+    transform: scale(1.05);
+  }
+
+  .plan--popular:hover{
+    transform: scale(1.15);
   }
   
   @media screen and (min-width: 1024px) {
@@ -755,6 +780,10 @@ a{
     max-width: 670px;
 }
 
+.block--domain{
+    padding-bottom: 0;
+}
+
 @media screen and (min-width: 760px) {
     .domain__price-list{
         grid-template-columns: repeat(6, 140px);
@@ -762,4 +791,14 @@ a{
         /* grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); */
         /* TODO: using temporary solution for the problem here*/
     }
+}
+
+/* Plan block */
+.plan--block .grid{
+    grid-gap: 8rem 4rem;
+}
+
+.plan--block .card{
+    max-width: 500px;
+    margin: 0 auto;
 }
