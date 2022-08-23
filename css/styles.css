@@ -223,7 +223,7 @@ a{
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -303,12 +303,14 @@ a{
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     display: flex;
+    /* justify-content: space-between; */
 }
 
 
 .input-group .input{
     border: 0;
     flex-grow: 1;
+    width: 0;
 }
 
 .input-group .btn{
@@ -779,7 +781,7 @@ a{
 .domain__price-list{
     display: grid;
     color: var(--color-headings);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     justify-items: center;
     font-size: 2rem;
